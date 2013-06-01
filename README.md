@@ -1,4 +1,4 @@
-jsHint-options-cn
+JSHint 配置项中文说明
 =================
 
-jsHint 配置项说明（汉化版）
+
