@@ -48,7 +48,17 @@ JSHint有两种类型的options：强制型和宽松型，前者使JSHint更加�
     
     * newcap
     
-    作用：
+    作用：值为true时，构造函数名需要大写. 
+    
+    备注：经测试，该选项是否激活，JSHint都不会检查构造函数名.
+    
+    * noarg
+    
+    作用：值为true时，禁止使用arguments.caller与arguments.callee.
+    
+    * noempty
+    
+    作用：值为true时，不允许代码中出现空的语句块（"{}"）.
     
 
 #### 2. 宽松型
