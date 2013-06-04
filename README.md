@@ -3,7 +3,7 @@ JSHint文档汉化版
 
 ## 一. JSHint options
 
-    JSHint有两种类型的options：强制型和宽松型，前者使JSHint更加严格，后者用来抑制一些警告.
+JSHint有两种类型的options：强制型和宽松型，前者使JSHint更加严格，后者用来抑制一些警告.
 
 
 #### 1. 强制型
