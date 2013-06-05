@@ -1,0 +1,2 @@
+JSHint relaxing options
+=================
