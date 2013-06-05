@@ -84,7 +84,17 @@ JSHint有两种类型的options：强制型和宽松型，前者使JSHint更加�
     作用：该选项激活后，对于"已定义却未使用的变量"会给出警告，可选的值有三个：
           (1) vars -- 只检查变量，不检查函数形参；
           (2) strict -- 检查变量和函数形参；
-          (3) true -- 同strict.
+          (3) true -- 检查变量和函数形参，但允许这种情况：一个未使用的形参后紧随一个被使用的形参.
+          
+    示例：strict与true的区别
+          (1) strict
+              function show(x,y) {alert(y);}  // jshint校验结果：'x' is defined but never used
+              show(1);
+          
+          (2) true
+              function show(x,y) {alert(y);} // jshint校验结果：pass
+              show(1); 
+        
 
 #### 2. 宽松型
 
