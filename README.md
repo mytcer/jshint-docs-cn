@@ -143,7 +143,8 @@ JSHint有两种类型的options：强制型和宽松型，前者使JSHint更加�
             j = i + j;
             return j;
           }
- 
+
+##### * maxcomplexity
 
 #### 二. 宽松型
 
