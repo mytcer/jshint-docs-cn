@@ -1,78 +1,78 @@
 JSHint enforcing options
 =================
   
-### * bitwise
+#### * bitwise
     
     作用：值为true时，禁止使用位操作符，如"^，|，&"等.
     
-### * camelcase
+#### * camelcase
   
     作用：值为true时，变量名必须使用驼峰风格（如"loginStatus"）或UPPER_CASE风格（如"LOGIN_STATUS"）.
     
-### * curly
+#### * curly
     
     作用：值为true时，不能省略循环和条件语句后的大括号.
     
     备注：如"if (con) ..."，需要写成"if (con) { ... }".
     
-### * eqeqeq
+#### * eqeqeq
     
     作用：值为true时，禁止使用"=="和"!="，而应该使用"==="和"!==".
     
-### * es3
+#### * es3
     
     作用：值为true时，表示你的代码需要遵守ECMAScript 3规范.
     
-### * forin
+#### * forin
     
     作用：值为true时，在所有"for in"循环中，必须使用hasOwnPropery过滤掉对象继承来的成员.
     
-### * immed
+#### * immed
     
     作用：???.
     
-### * indent
+#### * indent
     
     作用：该选项要求你的代码必须使用指定的tab缩进宽度，如"indent:4".
     
-### * latedef
+#### * latedef
     
     作用：值为true时，禁止在变量定义之前使用它.
     
-### * newcap
+#### * newcap
     
     作用：值为true时，构造函数名需要大写. 
     
     备注：经测试，该选项是否激活，JSHint都不会检查构造函数名.
     
-### * noarg
+#### * noarg
     
     作用：值为true时，禁止使用arguments.caller与arguments.callee.
     
-### * noempty
+#### * noempty
     
     作用：值为true时，不允许代码中出现空的语句块（"{}"）.
     
-### * nonew
+#### * nonew
     
     作用：值为true时，禁止使用产生副作用的构造器调用方式，如"new MyConstructor();".
     
-### * plusplus
+#### * plusplus
     
     作用：值为true时，禁止使用一元递增（"++"）和递减（"--"）运算符.
     
-### * quotmark
+#### * quotmark
     
     作用：该选项用于统一代码中的引号风格，可选的值有三个：
           (1) single -- 只能使用单引号；
           (2) double -- 只能使用双引号；
           (3) true -- 两者任选其一，但不能同时出现.
     
-### * undef
+#### * undef
     
     作用：值为true时，禁止使用未定义的变量.
     
-### * unused
+#### * unused
     
     作用：该选项激活后，对于"已定义却未使用的变量"会给出警告，可选的值有三个：
           (1) vars -- 只检查变量，不检查函数形参；
@@ -88,21 +88,21 @@ JSHint enforcing options
               function show(x,y) {alert(y);} // jshint校验结果：pass
               show(1); 
         
-### * strict
+#### * strict
     
     作用：值为true时，该选项会要求所有函数在ECMAScript 5的严格模式中运行.
     
     备注：该选项激活后，仅在函数作用域中启用严格模式（如果在全局作用域中启用，可能会影响页面中的第三方JS）.
 
-### * trailing
+#### * trailing
 
     作用：值为true时，禁止在代码的末尾出现空白.
     
-### * maxparams
+#### * maxparams
 
     作用：该选项用于设置每个函数形参数量的上限，如"maxparams:3".
     
-### * maxdepth
+#### * maxdepth
 
     作用：该选项用于设置每个函数中代码块嵌套层级的上限，如"maxdepth:1".
     
@@ -115,7 +115,7 @@ JSHint enforcing options
             }
           }
     
-### * maxstatements
+#### * maxstatements
 
     作用：该选项用于设置每个函数中语句数量的上限，如"maxstatements:4".
     
@@ -137,11 +137,10 @@ JSHint enforcing options
             return j;
           }
 
-### * maxcomplexity
+#### * maxcomplexity
 
     作用：???
     
-### * maxlen
+#### * maxlen
 
     作用：该选项用于设定每行的最大字符长度.
-
