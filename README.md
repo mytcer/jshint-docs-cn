@@ -100,6 +100,27 @@ JSHint有两种类型的options：强制型和宽松型，前者使JSHint更加�
     作用：值为true时，该选项会要求所有函数在ECMAScript 5的严格模式中运行.
     
     备注：该选项激活后，仅在函数作用域中启用严格模式（如果在全局作用域中启用，可能会影响页面中的第三方JS）.
+
+##### * trailing
+
+    作用：值为true时，禁止在代码的末尾出现空白.
+    
+##### * maxparams
+
+    作用：该选项用于设定每个函数形参数量的上限，如"maxparams:3".
+    
+##### * maxdepth
+
+    作用：该选项用于设定函数中代码块嵌套层级的上限，如"maxdepth:1".
+    
+    示例：/* jshint maxdepth:1 */
+          function show() {
+            if (1) {
+              if (2) { // jshint校验结果：Blocks are nested too deeply. (2)
+                alert('the second nested');
+              }
+            }
+          }
  
 
 #### 二. 宽松型
