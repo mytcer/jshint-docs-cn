@@ -28,6 +28,8 @@ JSHint relaxing options
     
     示例：/* jshint debug:false */
 
-        alert(1);
-        debugger; // jshint校验结果：Forgotten 'debugger' statement?
+        function show() {
+            alert(1);
+            debugger; // jshint校验结果：Forgotten 'debugger' statement?
+        }
     
