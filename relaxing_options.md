@@ -33,3 +33,12 @@ JSHint relaxing options
             debugger; // jshint校验结果：Forgotten 'debugger' statement?
         }
     
+#### * eqnull
+
+    作用：值为false时，如果代码中使用"=="来比较变量与null，则JSHint会给出警告；值为true时，则不会.
+    
+    示例：/* jshint eqnull:false */
+    
+        var a;
+        alert(a == null); // Expected '===' and instead saw '=='.
+        
