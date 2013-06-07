@@ -59,3 +59,18 @@ JSHint relaxing options
         // JSHint校验结果：Expected an assignment or function call and instead saw an expression.
         2 > 1 ? (alert(1)) : (alert(2));
         
+#### * funcscope
+
+    作用：值为false时，如果在控制语句中定义了变量，却在控制语句之外使用变量，则JSHint会给出警告.
+    
+    备注：JS中只有两种作用域：全局作用域与函数作用域.
+    
+    示例：/* jshint funcscope:false */
+    
+    function test() {
+        if (true) {
+            var x = 0;
+        }
+        
+        x = x + 1; // JSHint校验结果：'x' used out of scope.
+    }
