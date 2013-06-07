@@ -41,4 +41,21 @@ JSHint relaxing options
     
         var a;
         alert(a == null); // Expected '===' and instead saw '=='.
+
+#### * esnext
+
+    作用：值为true时，JSHint会使用ECMAScript 6的语法来校验你的代码.
+    
+#### * evil
+
+    作用：值为false时，不允许在代码中使用eval.
+    
+#### * expr
+
+    作用：值为false时，只允许在函数调用或赋值时使用表达式，否则会给出警告.
+    
+    示例：/* jshint expr:false */
+    
+        // JSHint校验结果：Expected an assignment or function call and instead saw an expression.
+        2 > 1 ? (alert(1)) : (alert(2));
         
