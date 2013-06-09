@@ -103,3 +103,27 @@ JSHint relaxing options
     
         /* jshint lastsemic:false */
         var a = function() {alert(1);return 'hehe'}(); // JSHint校验结果：Missing semicolon.
+        
+#### * laxbreak
+
+    作用：值为true时，允许代码中存在大多数不安全的换行（不包括逗号出现在行首的情况）；值为false时，会给出警告.
+    
+    示例：暂无（哪些换行是不安全滴???）.
+    
+#### * laxcomma
+
+    作用：值为true时，允许逗号出现在行首的换行方式；值为false时，会给出警告.
+    
+    示例：值为true和false时，校验结果对比
+    
+        /* jshint laxcomma:true */
+        var obj = {
+            name: 'haha'
+            ,age: 24 // JSHint校验结果：pass
+        };
+        
+        /* jshint laxcomma:false */
+        var obj = {
+            name: 'haha'
+            ,age: 24 // JSHint校验结果：Bad line breaking before ','.
+        };
