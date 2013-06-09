@@ -90,8 +90,16 @@ JSHint relaxing options
         
 #### * iterator
 
-    作用：值为false时，不允许使用__iterator__属性?
+    作用：???
     
 #### * lastsemic
 
-    作用：
+    作用：值为true时，允许单行语句块中最后一条语句不写分号；值为false时，则会给出警告.
+    
+    示例：值为true和false时，校验结果对比（return语句未写分号）
+    
+        /* jshint lastsemic:true */
+        var a = function() {alert(1);return 'hehe'}(); // JSHint校验结果：pass
+    
+        /* jshint lastsemic:false */
+        var a = function() {alert(1);return 'hehe'}(); // JSHint校验结果：Missing semicolon.
