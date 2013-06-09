@@ -77,7 +77,7 @@ JSHint relaxing options
 
 #### * globalstrict
 
-    作用：值为false，不允许使用全局级别的严格模式.
+    作用：值为false时，不允许使用全局级别的严格模式.
     
     备注：在全局中使用严格模式，会影响到第三方的JS，因此不建议这么做.
     
@@ -87,3 +87,11 @@ JSHint relaxing options
         function show() {
             alert(1);
         }
+        
+#### * iterator
+
+    作用：值为false时，不允许使用__iterator__属性?
+    
+#### * lastsemic
+
+    作用：
