@@ -127,3 +127,19 @@ JSHint relaxing options
             name: 'haha'
             ,age: 24 // JSHint校验结果：Bad line breaking before ','.
         };
+        
+#### * loopfunc
+
+    作用：值为true时，允许在循环中定义函数；值为false时，会给出警告.
+    
+    示例：值为false
+    
+        /* jshint loopfunc:false */
+        var nums = [];
+        for (var i = 0; i < 10; i++) {
+            nums[i] = function (j) {
+                return i + j;
+            };
+        }
+        nums[0](2);
+    
