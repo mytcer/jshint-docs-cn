@@ -137,7 +137,7 @@ JSHint relaxing options
         /* jshint loopfunc:false */
         var nums = [];
         for (var i = 0; i < 10; i++) {
-            nums[i] = function (j) {
+            nums[i] = function (j) { // JSHint校验结果：Don't make functions within a loop.
                 return i + j;
             };
         }
