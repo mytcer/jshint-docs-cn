@@ -180,3 +180,14 @@ JSHint relaxing options
 #### * proto
 
     作用：值为true时，允许在代码中使用__proto__属性；值为false时，则会给出警告.
+    
+#### * scripturl
+
+    作用：值为true时，允许在代码中使用"javascript:..."这样的url；值为false时，则会给出警告.
+    
+    示例：值为false时
+    
+        /* jshint scripturl:false */
+        var link = document.createElement('a');
+        link.href = 'javascript:void()'; // JSHint校验结果：Script URL.
+        
