@@ -143,3 +143,36 @@ JSHint relaxing options
         }
         nums[0](2);
     
+#### * moz
+
+    作用：该选项告诉JSHint，你的代码中使用了Mozilla JavaScript扩展.
+    
+#### * multistr
+
+    作用：值为true时，允许多行字符串；值为false时，则会给出警告.
+
+    备注：当值为true时，如果多行之间缺少转义字符，或者转义字符与新行之间有空白，JSHint依然会给出警告.
+    
+    示例1：值为true
+    
+        /* jshint multistr:true */
+        var text = "hello\
+        world"; // JSHint校验结果：pass
+        
+    示例2：值为true，但缺少转义字符
+    
+        /* jshint multistr:true */
+        var text = "hello
+        world"; // JSHint校验结果：Unclosed string.
+        
+    示例3：值为true，有转义字符，但转义字符与新行之间有空白
+    
+        /* jshint multistr:true */
+        var text = "hello\ 
+        world"; // JSHint校验结果：Bad or unnecessary escaping.
+        
+    示例4：值为false，有转义字符
+    
+        /* jshint multistr:false */
+        var text = "hello\ 
+        world"; // JSHint校验结果：Bad escaping of EOL. Use option multistr if needed.     
