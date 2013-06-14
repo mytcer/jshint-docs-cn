@@ -175,4 +175,8 @@ JSHint relaxing options
     
         /* jshint multistr:false */
         var text = "hello\ 
-        world"; // JSHint校验结果：Bad escaping of EOL. Use option multistr if needed.     
+        world"; // JSHint校验结果：Bad escaping of EOL. Use option multistr if needed.   
+        
+#### * proto
+
+    作用：值为true时，允许在代码中使用__proto__属性；值为false时，则会给出警告.
