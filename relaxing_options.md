@@ -191,3 +191,21 @@ JSHint relaxing options
         var link = document.createElement('a');
         link.href = 'javascript:void()'; // JSHint校验结果：Script URL.
         
+#### * smarttabs
+
+    作用：???
+    
+#### * shadow
+
+    作用：
+    
+#### * sub
+
+    作用：值为true时，允许用obj['name']和obj.name两种方式访问对象的属性；值为false时，不允许使用obj['name']方式，
+          除非只能使用这种方式访问.
+    
+    示例：值为false
+    
+        /* jshint sub:false */
+        var obj = {name: 'he'};
+        alert(obj['name']);  // JSHint校验结果：['name'] is better written in dot notation.
