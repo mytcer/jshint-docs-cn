@@ -1,0 +1,1 @@
+# JSHint environments options
