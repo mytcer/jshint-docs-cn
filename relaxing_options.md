@@ -212,7 +212,14 @@ JSHint relaxing options
         
 #### * supernew
 
-    作用：???
+    作用：是否允许使用像"new function() {...}"这样怪异的构造器，true -- 允许，false -- 不允许.
+    
+    示例：值为false
+    
+        /* jshint supernew:false */
+        var obj = new function() { // JSHint校验结果：Weird construction. Is 'new' unnecessary?
+            return {name: 'ha'};
+        };
     
 #### * validthis
 
