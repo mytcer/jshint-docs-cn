@@ -209,3 +209,22 @@ JSHint relaxing options
         /* jshint sub:false */
         var obj = {name: 'he'};
         alert(obj['name']);  // JSHint校验结果：['name'] is better written in dot notation.
+        
+#### * supernew
+
+    作用：???
+    
+#### * validthis
+
+    作用：是否允许在严格模式下的非构造函数中使用this，true -- 允许，false -- 不允许.
+    
+    备注：该选项只能用于函数作用域中.
+    
+    示例：值为false
+    
+        function show() {
+            /* jshint validthis:false */
+            'use strict';
+            this.name = 'haha';
+            alert(this.name); // JSHint校验结果：Possible strict violation.
+        }
