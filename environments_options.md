@@ -41,3 +41,31 @@
 #### * mootools
 
     作用: 该选项定义了mootools暴露出来的全局变量，true -- 启用，false -- 关闭.
+    
+#### * node
+
+    作用：该选项定义了Node环境中的全局变量.
+    
+#### * nonstandard
+
+    作用：该选项定义了一些非标准但广泛使用的全局变量，像"escape"和"unescape".
+    
+#### * prototypejs
+
+    作用：该选项定义了Prototype中暴露出来的全局变量.
+    
+#### * rhino
+
+    作用：该选项定义了Rhino环境中的全局变量.
+    
+#### * worker
+
+    作用：???
+    
+#### * wsh
+
+    作用：???
+    
+#### * yui
+
+    作用：该选项定义了YUI中暴露出来的全局变量.
