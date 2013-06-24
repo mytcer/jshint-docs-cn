@@ -19,3 +19,19 @@
         /* jshint nomen:true */
         var a_b = 1; 
         alert(a_b); // JSHint校验结果：ok
+        
+#### * onevar
+
+    作用：
+    
+#### * passfail
+
+    作用：让JSHint停在第一个错误/警告处，true -- 启用，false -- 不启用.
+    
+    示例：启用
+    
+        /* jshint passfail:true */
+        function show() {
+            var b = 1;
+            alert(a); // JSHint校验结果：Stopping. (87% scanned).
+        }
