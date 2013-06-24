@@ -35,3 +35,7 @@
             var b = 1;
             alert(a); // JSHint校验结果：Stopping. (87% scanned).
         }
+
+#### * white
+
+    作用：让JSHint检查你的代码中，违反道格拉斯JS编码风格的地方.
