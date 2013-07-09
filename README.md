@@ -3,13 +3,19 @@ JSHint文档汉化版
 
 ## 一. 使用方式
 
-### 用法一：作为node程序使用
+### 1. 作为Node程序使用
 
-##### 1. 安装jshint
+（1）安装jshint
 
 	$ npm install jshint -g
 	
-##### 2. 命令行下用jshint检查目标文件
+（2）命令行下用jshint检查目标文件
+
+	$ jshint file.js
+	
+	备注：目标文件可以有多个，文件名之间以空格分开
+
+（3）例子
 
 	// 目标文件test.js的内容
 	/* jshint unused: true */
