@@ -29,7 +29,18 @@ JSHint enforcing options
     
 #### * immed
     
-    作用：???.
+    作用：值为true时，调用立即函数必须使用括号包裹.
+
+    示例：
+          // 这样会报错
+          var f = function () {
+              // ...
+          }();
+          
+          // 必须这样
+          var f = (function () {
+              // ...
+          })();
     
 #### * indent
     
@@ -139,7 +150,7 @@ JSHint enforcing options
 
 #### * maxcomplexity
 
-    作用：???
+    作用：一言难尽. http://en.wikipedia.org/wiki/Cyclomatic_complexity
     
 #### * maxlen
 
