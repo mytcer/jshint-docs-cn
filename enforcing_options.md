@@ -29,7 +29,7 @@ JSHint enforcing options
     
 #### * immed
     
-    作用：值为true时，调用立即函数必须使用括号包裹.
+    作用：值为true时，调用立即执行的函数必须使用括号包裹.
 
     示例：
           // 这样会报错
